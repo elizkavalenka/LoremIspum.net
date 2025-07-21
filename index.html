@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoremIpsum.Net</title>
+    <link rel="stylesheet" href="./css/all.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+</head>
+    <body>
+        <header class="header header-sticky">
+            <div class="container header-container">
+                <a href="/" class="logo">LoremIpsum<span class="f-blue">.Net</span></a>
+                <nav class="header-menu-wrapp">
+                    <ul class="header-menu">
+                        <li class="header-menu-item"><a href="/" class="header-menu-item-link">Бизнес</a></li>
+                        <li class="header-menu-item"><a href="/" class="header-menu-item-link">О нас</a></li>
+                        <li class="header-menu-item"><a href="/" class="header-menu-item-link">Цены</a></li>
+                        <li class="header-menu-item"><a href="#order" class="header-menu-item-link">Оформить заказ</a></li>
+                    </ul>
+                </nav> 
+                <div class="header-burger">
+                    <div class="header-burger-line"></div>
+                    <div class="header-burger-line"></div>
+                    <div class="header-burger-line"></div>
+                </div>         
+            </div>
+        </header> 
+        <main>
+            <section class="promo">
+                <picture class="picture promo-picture">
+                    <source type="image/webp" media="(min-width: 769px)" srcset="./images/main_slide.webp">
+                    <source media="(min-width: 769px)" srcset="./images/main_slide.jpg">
+                    <source type="image/webp" srcset="./images/main_slide-small.webp">
+                    <img class="promo-picture-img" src="./images/main_slide-small.jpg" alt="Promo background">
+                </picture>
+
+                <div class="promo-wrapp">
+                    <div class="container">
+                        <div class="promo-wrapp_inner">
+                            <h1><span class="f-blue">Lorem ipsum</span> dolor sit ametconsectetur <span class="f-blue">adipiscing</span></h1>
+                            <div class="promo-text">
+                                <p class="bold">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+                                <ul class="ul promo-ul">
+                                    <li class="promo-ul_li">Totam rem aperiam eaque ipsa</li>
+                                    <li class="promo-ul_li">Sit voluptatem accusantium doloremque laudantium</li>
+                                    <li class="promo-ul_li">Sed ut perspiciatis, unde omnis iste natus error</li>
+                                </ul>
+                            </div>
+                            <div class="promo-buttons">
+                                <a href="#order" class="button button-blue">Заказать</a>
+                                <button class="button button-white">Подробнее</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <section class="order">
+                <div class="container">
+                    <h2>Оформление <span class="f-blue">Заказа</span></h2>
+                    <p class="order-subtitle f-center">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+                    
+                    <div class="order-dotted-block">
+                        <div class="component">
+                            <div class="component-circle">
+                                <svg class="social-icon" viewBox="0 0 55 56" width="55" height="55"><use href="./images/icons/sprite-dots-block.svg#dot-percent"></use></svg>
+                            </div>
+                            <p class="component-descr">Сonsecteturadipiscing elit</p>
+                        </div>
+                        <div class="component">
+                            <div class="component-circle">
+                                <svg class="social-icon" viewBox="0 0 55 56" width="55" height="55"><use href="./images/icons/sprite-dots-block.svg#dot-search"></use></svg>
+                            </div>
+                            <p class="component-descr">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="component">
+                            <div class="component-circle">
+                                <svg class="social-icon" viewBox="0 0 55 56" width="55" height="55"><use href="./images/icons/sprite-dots-block.svg#dot-file"></use></svg>
+                            </div>
+                            <p class="component-descr">Sed do eiusmod tempor</p>
+                        </div>
+                        <div class="component">
+                            <div class="component-circle">
+                                <svg class="social-icon" viewBox="0 0 55 56" width="55" height="55"><use href="./images/icons/sprite-dots-block.svg#dot-mail"></use></svg>
+                            </div>
+                            <p class="component-descr">Esse cillum dolore eu fugiat</p>
+                        </div>
+                        <div class="component">
+                            <div class="component-circle">
+                                <svg class="social-icon" viewBox="0 0 55 56" width="55" height="55"><use href="./images/icons/sprite-dots-block.svg#dot-money"></use></svg>
+                            </div>
+                            <p class="component-descr">Excepteur sint occaecat cupidatat non proident</p>
+                        </div>
+                    </div>
+                    
+                    <form class="order-form form" action="/upload" method="post" enctype="multipart/form-data">
+                        <div class="order-form-wrapp">
+                            <div class="order-form-element select-wrapp">
+                                <select class="select" name="type">
+                                    <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+                                    <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+                                    <option value="Et harum quidem">Et harum quidem</option>
+                                    <option value="Temporibus autem">Temporibus autem</option>
+                                    <option value="Itaque earum rerum">Itaque earum rerum</option>
+                                    <option value="Lorem ipsum dolor">Lorem ipsum dolor</option>
+                                    <option value="sit amet consectetur">sit amet consectetur </option>
+                                    <option value="adipisicing elit">adipisicing elit</option>
+                                    <option value="Doloremque, unde.">Doloremque, unde.</option>
+                                    <option value="Rerum Doloremque, unde">Rerum  Doloremque, unde</option>
+                                    <option value="Rerum">Rerum</option>
+                                    <option value="nihil perspiciatis magnam">nihil perspiciatis magnam</option>
+                                    <option value="voluptatem ullam">voluptatem ullam</option>
+                                    <option value="fuga excepturi fuga excepturi"></option> 
+                                    <option value="praesentium itaque cumque">praesentium itaque cumque </option>
+                                    <option value="sunt voluptates sunt voluptates">sunt voluptates sunt voluptates</option>
+                                    <option value="facere nesciunt iusto quia ">facere nesciunt iusto quia </option>
+                                    <option value="sequi unde rem">sequi unde rem!</option>
+                                </select>
+                            </div>
+                            <div class="order-form-element order-form-input"><input placeholder="Ваш e-mail" name="email" type="email"  autocomplete="on"></div>
+                            <div class="order-form-element order-form-input"><input placeholder="Ваше имя" name="name" type="text" autocomplete="given-name"></div>
+                            <div class="order-form-element range">
+                                <div class="range-data">
+                                    <label class="range-label" for="tailmetr">Sed ut perspiciatis, unde omnis iste natus</label>
+                                    <span id="range-value">75%</span>
+                                </div>
+                                <input class="range-input" id="tailmetr" type="range" min="0" max="100" value="75" step="1"  oninput="updateRangeValue()">
+                            </div>
+                            <div class="order-form-element ">
+                                <label class="file-label" for="file-upload">
+                                    Прикрепить файл
+                                </label>
+                                <div class="file-upload">
+                                    <input type="file" id="file-upload" name="file-upload" accept="*" onchange="showFileInfo()">
+                                </div>
+                                <div class="file-info" id="file-info"></div>
+                            </div>
+                        </div>
+                        <div class="f-center">
+                            <button class="button-blue order-form-button">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container footer-wrapp">
+                <div>
+                    <span class="footer-copyright">© 2018 «LoremIpsum.net» Все права защищены.</span>
+                </div>
+                
+                <div>
+                    <div class="footer-icon i-qiwi">Qiwi wallet</div>
+                    <div class="footer-icon i-yandex">Yandex Money</div>
+                    <div class="footer-icon i-web">Web Money</div>
+                </div>
+                
+                <div>
+                    <a class="footer-links footer-icon i-mail" href="mailto:info@ipsum228.com">info@ipsum228.com</a>
+                    <a class="footer-links footer-icon i-vk" href="https://vk.com">Мы вконтакте</a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+.select-wrapp {
+    .choices {
+        &__inner {
+            border: 1px solid #fff;
+            border-radius: 3px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.85);
+        
+            font-weight: 400;
+            font-size: 18px;
+            color: #272733;
+        
+            overflow: hidden;
+        }
+        
+        
+        &__list {
+            &--single {
+                padding: 0;
+            }
+            &--dropdown, &[aria-expanded] {
+                background: rgba(39, 39, 51, 0.9);
+                border: 1px solid #3D4050;
+
+                .choices__list {
+                    max-height: 179px;
+                    padding: 0 10px;
+                    margin-right: 4px;
+                }
+                .choices__item {
+                    padding: 0;
+                    
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 189%;
+                    color: #fff;
+                    &--selectable.is-highlighted {
+                        background-color: transparent;
+                        color: #42A9ED;
+                    }
+                }
+            }
+
+        }
+        
+        &__placeholder {
+            font-weight: 400;
+            color: #272733;
+            opacity: 1;
+            font-size: 0.78em;
+            @media(min-width: 768px) {
+                font-size: 1em;
+            }
+        }
+        
+        
+        &.is-open {
+            .choices__list--dropdown, .choices__list[aria-expanded] {
+                border: 1px solid #3D4050;
+            }
+            .choices__inner{
+                border-radius: 3px 3px 0 0;
+                border-color: #3D4050;
+                background: rgba(61, 64, 80, 0.85);
+            }
+            
+            .choices__item--selectable, .choices__placeholder  {
+                color: #fff;
+            }
+        }
+        
+        &.is-flipped.is-open .choices__inner{border-radius:0 0 3px 3px}
+        
+        &[data-type*=select-one] {
+
+            .choices__inner {
+                padding: 12px 10px;
+            }
+    
+            &::after {
+                background: url("../images/icons/arrow_select.svg") center center / cover no-repeat;
+                width: 9px;
+                height: 5px;
+                right: 16px;
+                border: none;
+                transition: transform 0.3s ease-in-out;
+            }
+            &.is-open::after {
+                margin-top: -2.5px;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
