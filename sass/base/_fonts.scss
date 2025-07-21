@@ -1,0 +1,18 @@
+$file-path: '../sass/fonts/';
+$font-name:(						
+    'Raleway',
+	'Lato',
+	'Lato-Bold',
+	'Lato-Black',
+	'Lato-Heavy'
+);
+
+@each $current-font in $font-name {
+	@font-face {
+		font-family: $current-font; 
+		src: url('#{$file-path}#{$current-font}.woff2'); 
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+}
